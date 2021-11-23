@@ -10,7 +10,7 @@
             <?= \Config\Services::validation()->listErrors() ?>
             <div class="card-group">
                <div class="card p-4">
-                 <form action="./userlogin" method="get" enctype="multipart/form-data">
+                 <form action="./userlogin" method="post" enctype="multipart/form-data">
                     <div class="card-body">
                         <h1>Login</h1>
                         <p class="text-muted">Sign In to your account</p>

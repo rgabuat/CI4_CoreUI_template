@@ -17,10 +17,7 @@ class LoginController extends BaseController
 
         $session = session();
         $model = new UserModel();
-
-        // $username = $this->request->getPost('username');
-        // $password = $this->request->getPost('password');
-        if ($this->request->getMethod() == 'get')
+        if ($this->request->getMethod() === 'post')
         {
             $username = $this->request->getPost('username');
             $password = $this->request->getPost('password');
@@ -61,7 +58,7 @@ class LoginController extends BaseController
        
         else
         {
-        echo view('./login');
+            echo view('./login');
         }  
     }
 }
