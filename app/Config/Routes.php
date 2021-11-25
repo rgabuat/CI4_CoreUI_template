@@ -42,6 +42,9 @@ $routes->get('/logout','LoginController::logout');
 $routes->get('/signup', 'RegisterController::index');
 $routes->match(['get','post'],'/validate-form', 'RegisterController::store');
 
+//accounts
+$routes->get('/accounts', 'AccountsController::index');
+
 //test
 $routes->get('/test', 'AdminController::test');
 /*

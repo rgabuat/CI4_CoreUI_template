@@ -24,8 +24,10 @@
         <!-- Main styles for this application-->
         <link href="<?php echo base_url('css/style.css'); ?>" rel="stylesheet">
         <link href="<?php echo base_url('vendors/pace-progress/css/pace.min.css'); ?>" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
         <!-- Global site tag (gtag.js) - Google Analytics-->
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+        <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
 

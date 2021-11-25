@@ -14,12 +14,12 @@
                                 <i class="nav-icon icon-user"></i> Profile</a>
                         </li>
                         <?php endif; ?>
-                        <?php if(isset($_SESSION['role']) && $_SESSION['role'] == 1 ): ?>
+                        <!-- <php if(isset($_SESSION['role']) && $_SESSION['role'] == 1 ): ?> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="colors.html">
+                            <a class="nav-link" href="./accounts">
                                 <i class="nav-icon icon-people"></i> Accounts</a>
                         </li>
-                        <?php endif; ?>
+                        <!-- <php endif; ?> -->
                         <li class="nav-item">
                             <a class="nav-link" href="./looping">
                                 <i class="nav-icon icon-notebook"></i>Bank Details</a>

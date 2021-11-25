@@ -20,6 +20,7 @@
         <script src="<?php echo base_url('node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js'); ?>"></script>
         <script src="<?php echo base_url('js/main.js'); ?>"></script>
         <script type="text/javascript" src="<?php echo base_url('js/jquery.pjax.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo base_url('js/app.js'); ?>"></script>
 
         <script type="text/javascript">
             $(function () {
