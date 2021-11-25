@@ -398,7 +398,7 @@
                                     </div>
                                 </div>
                             </div>
-                            </.co
+                            <!-- </.co -->
                             <div class="col-sm-6 col-lg-3">
                                 <div class="card text-white bg-warning">
                                     <div class="card-body pb-0">
