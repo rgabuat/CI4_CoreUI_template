@@ -19,7 +19,7 @@ class LoginController extends BaseController
         {
             $username = $this->request->getPost('username');
             $password = $this->request->getPost('password');
-        
+
             $data = $model->where('username', $username)->first();
 
             if($data)
