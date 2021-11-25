@@ -41,7 +41,7 @@
         </script>
     </head>
     <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
-        <!-- <header class="app-header navbar">
+        <header class="app-header navbar">
             <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -133,9 +133,9 @@
             <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        </header> -->
+        </header>
         <div class="app-body" id="pjax-container">
-            <!-- <div class="sidebar">
+            <div class="sidebar">
                 <nav class="sidebar-nav">
                     <ul class="nav">
                         <li class="nav-item">
@@ -337,7 +337,7 @@
                     </ul>
                 </nav>
                 <button class="sidebar-minimizer brand-minimizer" type="button"></button>
-            </div> -->
+            </div>
             <main class="main" >
                 <!-- Breadcrumb-->
                 <ol class="breadcrumb">
@@ -359,7 +359,7 @@
                         </div>
                     </li>
                 </ol>
-                <!-- <div class="container-fluid">
+               <div class="container-fluid">
                     <div class="animated fadeIn">
                         <div class="row">
                             <div class="col-sm-6 col-lg-3">
@@ -383,7 +383,7 @@
                                     </div>
                                 </div>
                             </div>
-                            /.col
+                            <!-- /.col -->
                             <div class="col-sm-6 col-lg-3">
                                 <div class="card text-white bg-info">
                                     <div class="card-body pb-0">
@@ -420,7 +420,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col
+                            
                             <div class="col-sm-6 col-lg-3">
                                 <div class="card text-white bg-danger">
                                     <div class="card-body pb-0">
@@ -444,7 +444,7 @@
                             </div>
                             <!-- /.col-->
                         </div>
-                        <!-- /.row
+                       
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
@@ -452,7 +452,7 @@
                                         <h4 class="card-title mb-0">Traffic</h4>
                                         <div class="small text-muted">November 2017</div>
                                     </div>
-                                    <!-- /.col
+                                    
                                     <div class="col-sm-7 d-none d-md-block">
                                         <button class="btn btn-primary float-right" type="button">
                                             <i class="icon-cloud-download"></i>
@@ -469,9 +469,9 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <!-- /.col
+                                  
                                 </div>
-                                <!-- /.row-
+                                
                                 <div class="chart-wrapper" style="height:300px;margin-top:40px;">
                                     <canvas class="chart" id="main-chart" height="300"></canvas>
                                 </div>
@@ -516,7 +516,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /.card-
+                        
                         <div class="row">
                             <div class="col-sm-6 col-lg-3">
                                 <div class="brand-card">
@@ -538,7 +538,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-
+                            
                             <div class="col-sm-6 col-lg-3">
                                 <div class="brand-card">
                                     <div class="brand-card-header bg-twitter">
@@ -559,7 +559,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-
+                            
                             <div class="col-sm-6 col-lg-3">
                                 <div class="brand-card">
                                     <div class="brand-card-header bg-linkedin">
@@ -580,7 +580,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-
+                            
                             <div class="col-sm-6 col-lg-3">
                                 <div class="brand-card">
                                     <div class="brand-card-header bg-google-plus">
@@ -601,9 +601,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-
+                           
                         </div>
-                        <!-- /.row-
+                      
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card">
@@ -622,7 +622,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- /.col-
+                                                    
                                                     <div class="col-sm-6">
                                                         <div class="callout callout-danger">
                                                             <small class="text-muted">Recuring Clients</small>
@@ -633,9 +633,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- /.col-
+                                                  
                                                 </div>
-                                                <!-- /.row-
+                                                
                                                 <hr class="mt-0">
                                                 <div class="progress-group mb-4">
                                                     <div class="progress-group-prepend">
@@ -729,7 +729,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- /.col-
+                                            
                                             <div class="col-sm-6">
                                                 <div class="row">
                                                     <div class="col-sm-6">
@@ -742,7 +742,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- /.col-
+                                                    
                                                     <div class="col-sm-6">
                                                         <div class="callout callout-success">
                                                             <small class="text-muted">Organic</small>
@@ -753,9 +753,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- /.col-
+                                                    
                                                 </div>
-                                                <!-- /.row-
+                                                
                                                 <hr class="mt-0">
                                                 <div class="progress-group">
                                                     <div class="progress-group-header">
@@ -834,9 +834,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- /.col-
+                                         
                                         </div>
-                                        <!-- /.row-
+                                        
                                         <br>
                                         <table class="table table-responsive-sm table-hover table-outline mb-0">
                                             <thead class="thead-light">
@@ -1073,11 +1073,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-
+                       
                         </div>
-                        <!-- /.row-
+                   
                     </div>
-                </div> -->
+                </div> 
             </main>
             <aside class="aside-menu">
                 <ul class="nav nav-tabs" role="tablist">

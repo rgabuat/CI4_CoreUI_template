@@ -2,20 +2,13 @@
 namespace App\Controllers;
 
 
-class AdminController extends BaseController 
+class UserController extends BaseController 
 {
+    
     public function index()
     {
-        $data = array();
-        $data['main_content'] = view('admin/admindashboard');
-        return view('admin/main/main_content',$data);
+        return view('admin/main/main_content');
     }
-
-    public function test()
-    {
-        return view('index');
-    }
-
 
     public function looping()
     {

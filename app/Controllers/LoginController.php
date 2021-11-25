@@ -5,7 +5,6 @@ use App\Models\UserModel;
 
 class LoginController extends BaseController 
 {
-    
     public function index()
     {
         helper(['form']);
@@ -14,7 +13,6 @@ class LoginController extends BaseController
 
     public function loginAuth()
     {
-
         $session = session();
         $model = new UserModel();
         if ($this->request->getMethod() === 'post')
@@ -22,7 +20,6 @@ class LoginController extends BaseController
             $username = $this->request->getPost('username');
             $password = $this->request->getPost('password');
         
-       
             $data = $model->where('username', $username)->first();
 
             if($data)
@@ -34,13 +31,19 @@ class LoginController extends BaseController
                     $ses_data = [
                         'username'       => $data['username'],
                         'email'          => $data['email'],
-                        'isLoggedIn'     => TRUE
+                        'isLoggedIn'     => TRUE,
+                        'role'           => $data['level']
                     ];
+                    print_r($ses_data);
                     $session->set($ses_data);
-                    if(!$data['role'])
-                        return redirect()->to('admin/main/main_content');
-                    else    
-                        return redirect()->to('admin/main/main_content');
+                    if($data['level'])
+                    {
+                        return redirect()->to('dashboard');
+                    }
+                    else 
+                    {
+                        return redirect()->to('register');
+                    }
                 }
                 else
                 {
@@ -53,12 +56,18 @@ class LoginController extends BaseController
                 $session->setFlashdata('msg', 'Email not Found');
                 return redirect()->to('./login');
             }
-
         }
-       
         else
         {
+
+            $data['validation'] = $this->validator;
             echo view('./login');
         }  
+    }
+    public function logout()
+    {
+        $session = session();
+        $session->destroy();
+        return redirect()->to('./login');
     }
 }

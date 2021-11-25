@@ -4,15 +4,16 @@
 <body>
 <div class="app flex-row align-items-center ng-scope">
 <div class="container">
+
     <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mx-4">
         <?php if(isset($validation)):?>
-                <div class="alert alert-warning">
+                <div class="alert alert-warning mb-3">
                    <?= $validation->listErrors() ?>
                 </div>
         <?php endif;?>
-      <div class="col-md-6">
-        <div class="card mx-4">
-          <form action="./RegisterController/store" method="post">
+          <form action="<?php echo base_url('/validate-form') ?>" method="post" enctype="multipart/form-data">
             <div class="card-body p-4">
                 <h1>Register</h1>
                 <p class="text-muted">Create your account</p>

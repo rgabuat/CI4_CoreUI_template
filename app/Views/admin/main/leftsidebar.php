@@ -4,22 +4,30 @@
                         <li class="nav-item">
                             <a data-pjax class="nav-link" href="<?php echo base_url('dashboard'); ?>">
                                 <i class="nav-icon icon-speedometer"></i> Dashboard
-                                <span class="badge badge-primary">NEW</span>
+                                <!-- <span class="badge badge-primary">NEW</span> -->
                             </a>
                         </li>
-                        <li class="nav-title">Theme</li>
+                        <!-- <li class="nav-title">Theme</li> -->
+                        <?php if(isset($_SESSION['role']) && $_SESSION['role'] == 0 ): ?>
                         <li class="nav-item">
                             <a class="nav-link" href="colors.html">
-                                <i class="nav-icon icon-drop"></i> Colors</a>
+                                <i class="nav-icon icon-user"></i> Profile</a>
                         </li>
+                        <?php endif; ?>
+                        <?php if(isset($_SESSION['role']) && $_SESSION['role'] == 1 ): ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="typography.html">
-                                <i class="nav-icon icon-pencil"></i> Typography</a>
+                            <a class="nav-link" href="colors.html">
+                                <i class="nav-icon icon-people"></i> Accounts</a>
                         </li>
-                        <li class="nav-title">Components</li>
+                        <?php endif; ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./looping">
+                                <i class="nav-icon icon-notebook"></i>Bank Details</a>
+                        </li>
+                        <!-- <li class="nav-title">Components</li> -->
                         <li class="nav-item nav-dropdown">
                             <a class="nav-link nav-dropdown-toggle" href="#">
-                                <i class="nav-icon icon-puzzle"></i> Base</a>
+                                <i class="nav-icon icon-reload"></i>Withdraw Funds</a>
                             <ul class="nav-dropdown-items">
                                 <li class="nav-item">
                                     <a class="nav-link" href="base/breadcrumb.html">
@@ -89,7 +97,7 @@
                         </li>
                         <li class="nav-item nav-dropdown">
                             <a class="nav-link nav-dropdown-toggle" href="#">
-                                <i class="nav-icon icon-cursor"></i> Buttons</a>
+                                <i class="nav-icon icon-briefcase"></i> Holdings</a>
                             <ul class="nav-dropdown-items">
                                 <li class="nav-item">
                                     <a class="nav-link" href="buttons/buttons.html">
@@ -111,11 +119,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="charts.html">
-                                <i class="nav-icon icon-pie-chart"></i> Charts</a>
+                                <i class="nav-icon icon-doc"></i> Submit Bank Details</a>
                         </li>
                         <li class="nav-item nav-dropdown">
                             <a class="nav-link nav-dropdown-toggle" href="#">
-                                <i class="nav-icon icon-star"></i> Icons</a>
+                                <i class="nav-icon icon-refresh"></i>Deposite Funds</a>
                             <ul class="nav-dropdown-items">
                                 <li class="nav-item">
                                     <a class="nav-link" href="icons/coreui-icons.html">
@@ -141,7 +149,7 @@
                         </li>
                         <li class="nav-item nav-dropdown">
                             <a class="nav-link nav-dropdown-toggle" href="#">
-                                <i class="nav-icon icon-bell"></i> Notifications</a>
+                                <i class="nav-icon icon-eye"></i>Watch List</a>
                             <ul class="nav-dropdown-items">
                                 <li class="nav-item">
                                     <a class="nav-link" href="notifications/alerts.html">
@@ -158,9 +166,15 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="widgets.html">
-                                <i class="nav-icon icon-calculator"></i> Widgets
-                                <span class="badge badge-primary">NEW</span>
+                            <a class="nav-link" href="#">
+                                <i class="nav-icon icon-wallet"></i>My Account Balance
+                                <!-- <span class="badge badge-primary">NEW</span> -->
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./logout">
+                                <i class="nav-icon icon-logout"></i> Logout
+                                <!-- <span class="badge badge-primary">NEW</span> -->
                             </a>
                         </li>
                         <li class="divider"></li>

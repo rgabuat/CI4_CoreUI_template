@@ -24,7 +24,12 @@
             <main class="main" >
                 <!-- Breadcrumb-->
                 <?= view('admin/main/topbar');?>
-                <?= view('admin/main/content');?>
+                <?php 
+                    $data = array();
+                    $data['main_content'] = $main_content;
+                    echo view('admin/main/content',$data);
+                ?>
+                <!-- <= view('admin/main/content');?> -->
             </main>
 
             <aside class="aside-menu">

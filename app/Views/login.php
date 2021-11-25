@@ -7,7 +7,9 @@
    <div class="container">
       <div class="row justify-content-center">
          <div class="col-md-8">
-            <?= \Config\Services::validation()->listErrors() ?>
+                <?php if(session()->getFlashdata('msg')):?>
+                    <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+                <?php endif;?>
             <div class="card-group">
                <div class="card p-4">
                  <form action="./userlogin" method="post" enctype="multipart/form-data">
@@ -42,7 +44,7 @@
                      <div>
                         <h2>Sign up</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button type="button" class="btn btn-primary active mt-3">Register Now!</button>
+                        <a href="./register" class="btn btn-primary active mt-3">Register Now!</a>
                      </div>
                   </div>
                </div>

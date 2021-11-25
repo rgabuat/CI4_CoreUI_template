@@ -10,40 +10,33 @@ class RegisterController extends BaseController
     {
         helper(['form']);
         $data = [];
-        echo view('register', $data);
+        echo view('signup', $data);
     }
   
     public function store()
     {
-        helper(['form']);
-        $rules = [
-            'username'          => 'required|min_length[2]|max_length[50]',
-            'email'         => 'required|min_length[4]|max_length[100]|valid_email|is_unique[users.email]',
+        helper(['form','url']);
+        $rules =  [
+            'username'          => 'required|min_length[2]|max_length[50]|is_unique[tbl_users.username]',
+            'email'         => 'required|min_length[4]|max_length[100]|valid_email|is_unique[tbl_users.email,]',
             'password'      => 'required|min_length[4]|max_length[50]',
             'confirmpassword'  => 'matches[password]'
         ];
 
-       
-          
-        // if($this->validate($rules)){
-            $userModel = new UserModel();
-
+        if($this->validate($rules)){
+            $TempUserModel = new TempUserModel();
             $data = [
                 'username'     => $this->request->getVar('username'),
                 'email'    => $this->request->getVar('email'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];
-
-            print_r($data);
-
-            $userModel->save($data);
-
-            // return redirect()->to('./register');
-        // }
-        // else{
-        //     $data['validation'] = $this->validator;
-        //     echo view('./register', $data);
-        // }
+            $TempUserModel->save($data);
+            return redirect()->to('./signup');
+        }
+        else{
+            $data['validation'] = $this->validator;
+            echo view('./signup', $data);
+        }
           
     }
     
